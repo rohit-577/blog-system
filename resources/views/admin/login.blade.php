@@ -201,11 +201,7 @@
                 </button>
             </form>
 
-            <div class="hint-box">
-                <strong>Demo Credentials</strong><br>
-                Email: <strong>admin@blogsystem.com</strong><br>
-                Password: <strong>admin123</strong>
-            </div>
+            
         </div>
     </div>
 

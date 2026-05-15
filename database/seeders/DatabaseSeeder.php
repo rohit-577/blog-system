@@ -13,12 +13,7 @@ class DatabaseSeeder extends Seeder
     public function run(): void
     {
         // Create admin user
-        User::create([
-            'name' => 'Admin',
-            'email' => 'admin@blogsystem.com',
-            'password' => Hash::make('admin123'),
-            'is_admin' => true,
-        ]);
+        User::updateOrCreate( ['email' => 'admin@blogsystem.com'], [ 'name' => 'Admin', 'password' => Hash::make('admin123'), 'is_admin' => true, ] );
 
         // Seed sample blogs
         $blogs = [
