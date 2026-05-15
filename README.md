@@ -1,59 +1,209 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
 
-## About Laravel
+BlogYaari – Blog Management System
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+A modern and responsive Blog Management System built using Laravel, PHP, MySQL, Bootstrap, jQuery, AJAX, and CKEditor.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+This project was developed as a complete full-stack blogging platform with an admin dashboard, rich text editor, AJAX-powered filtering, responsive UI, and live deployment support.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+---
 
-## Learning Laravel
+# Live Demo
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+### Frontend
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+https://blog-system-jytu.onrender.com
 
-## Laravel Sponsors
+### Admin Panel
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+https://blog-system-jytu.onrender.com/admin/login
 
-### Premium Partners
+---
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+# Admin Credentials
 
-## Contributing
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Email: admin@blogsystem.com
+Password: admin123
 
-## Code of Conduct
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+# Features
 
-## Security Vulnerabilities
+## Frontend Features
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+* Responsive modern UI
+* Dynamic blog listing
+* Category filtering using AJAX
+* Real-time search functionality
+* Blog detail pages
+* Mobile-friendly layout
+* Auto-updating content from database
+* Featured images support
 
-## License
+---
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## Admin Panel Features
+
+* Secure admin login system
+* Create, edit and delete blogs
+* Rich text editor using CKEditor
+* Table support inside editor
+* Image upload support
+* Text formatting tools
+* Category management
+* Automatic date handling
+* Live image preview
+* Character counters
+
+---
+
+# Technologies Used
+
+## Backend
+
+* Laravel
+* PHP 8+
+* MySQL
+* Eloquent ORM
+* MVC Architecture
+
+## Frontend
+
+* HTML5
+* CSS3
+* Bootstrap 5
+* JavaScript
+* jQuery
+* AJAX
+
+## Editor
+
+* CKEditor 5
+
+## Tools & Services
+
+* XAMPP
+* Composer
+* Git & GitHub
+* Railway MySQL Database
+* Render Deployment
+* Docker
+
+---
+
+# Local Setup Guide
+
+## 1. Clone Repository
+
+```bash
+git clone YOUR_GITHUB_REPOSITORY_LINK
+cd blog-system
+```
+
+---
+
+## 2. Install Dependencies
+
+```bash
+composer install
+```
+
+---
+
+## 3. Configure Environment
+
+Copy `.env.example` to `.env`
+
+```bash
+cp .env.example .env
+```
+
+Update database credentials inside `.env`
+
+```env
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3307
+DB_DATABASE=blog_system
+DB_USERNAME=root
+DB_PASSWORD=
+```
+
+---
+
+## 4. Generate Application Key
+
+```bash
+php artisan key:generate
+```
+
+---
+
+## 5. Run Migrations
+
+```bash
+php artisan migrate
+```
+
+---
+
+## 6. Seed Database
+
+```bash
+php artisan db:seed
+```
+
+---
+
+## 7. Create Storage Link
+
+```bash
+php artisan storage:link
+```
+
+---
+
+## 8. Start Development Server
+
+```bash
+php artisan serve
+```
+
+Open:
+
+```bash
+http://127.0.0.1:8000
+```
+
+---
+
+# Deployment
+
+The application is deployed using:
+
+* Render (Web Hosting)
+* Railway (Cloud MySQL Database)
+* Docker
+
+Deployment includes:
+
+* Dockerized Laravel setup
+* Environment variable configuration
+* Online database integration
+* Production optimization
+* File storage linking
+
+---
+
+# Project Highlights
+
+* Full-stack Laravel application
+* AJAX-powered dynamic updates
+* Rich admin experience
+* Clean modern white UI
+* Fully responsive design
+* Production deployment ready
+* Optimized database structure
+* Professional dashboard styling
+
+
